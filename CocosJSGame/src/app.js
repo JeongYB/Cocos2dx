@@ -40,7 +40,7 @@ var HelloWorldLayer = cc.Layer.extend({
         	onTouchEnded:function(touch,event){
         		var p1 = touch.getStartLocation();
         		var p2 = touch.getLocation();
-        		event.getCurrentTarget().shapes.push(p1,p2);
+        		//event.getCurrentTarget().shapes.push(p1,p2);
         		event.getCurrentTarget().drawNode.drawSegment(p1,p2,2,cc.color(100,20,20));
         		return true;
         	}
